@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Dancing+Script:wght@500&');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Be Vietnam Pro', sans-serif!important;
+}
+/*========= scroll left =========*/
+body::-webkit-scrollbar {
+  width: 15px;
+}
+body::-webkit-scrollbar-track {
+  background-color: pink;
+}
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, blue, #f9f871);
+  border-radius: 10px;
+}
+/*========= scroll to top ========*/
+html,
+body{
+    scroll-behavior: smooth;
+}
+
+/*======== card ========*/
+.cards {
+    --spacing: 20px;
+    --columns: 1;
+    margin-left: calc(-1 * var(--spacing));
+  }
+.card {
+width: calc(calc(100% / var(--columns)) - var(--spacing));
+margin-left: var(--spacing);
+margin-bottom: var(--spacing);
+}
+.card-title {
+word-break: break-all;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+word-break: break-word;
+}
+/*======== dak-dam ========*/
+.dak {
+    --spacing: 20px;
+    --columns: 4;
+    margin-left: calc(-1 * var(--spacing));
+  }
+.dam {
+width: calc(calc(100% / var(--columns)) - var(--spacing));
+margin-left: var(--spacing);
+margin-bottom: var(--spacing);
+}
+.dam-title {
+word-break: break-all;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+word-break: break-word;
+}
+@media (max-width: 481px){
+  .dam {
+    --columns: 2;
+  }
+  .head .close-menu{
+    display: block!important;
+  }
+  .head .head-item{
+    display: flex;
+    justify-content: space-between;
+  }
+  .head .logo{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .head .head-menu,
+  .head .head-item2{
+    display: none;
+  }
+}
+
+/*======== top ========*/
+.tops {
+    --spacing: 20px;
+    --columns: 1;
+    margin-left: calc(-1 * var(--spacing));
+  }
+.top {
+width: calc(calc(100% / var(--columns)) - var(--spacing));
+margin-left: var(--spacing);
+margin-bottom: var(--spacing);
+}
+.top-title {
+word-break: break-all;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+word-break: break-word;
+}
